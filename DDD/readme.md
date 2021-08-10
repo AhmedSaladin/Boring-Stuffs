@@ -1,0 +1,1 @@
+This folder is for study and applying Domain Driven Design with node.js
