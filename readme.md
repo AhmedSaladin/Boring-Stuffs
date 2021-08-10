@@ -1,1 +1,1 @@
-This repo for boring mode playground.
+This repo is for boring mode sandbox.
