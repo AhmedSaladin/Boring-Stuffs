@@ -1,4 +1,4 @@
-require("../db/db_connection");
+require("./db/db_connection");
 const express = require("express");
 
 module.exports = (app) => {
