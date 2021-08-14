@@ -18,6 +18,6 @@ const sequelize = new Sequelize(
   }
 );
 
-sequelize.authenticate().then(() => console.log("Database is connected."));
+sequelize.authenticate().then(() => console.log("Database is connected"));
 sequelize.sync();
 module.exports = sequelize;
