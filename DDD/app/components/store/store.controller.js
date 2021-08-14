@@ -14,13 +14,13 @@ module.exports = {
   },
   create_new_store: async (req, res) => {
     try {
-      const { name, st_code, address } = req.body;
-      const store = new Store(name, st_code, address);
-      const data = await sequelize.query(CREATE_NEW_STORE, {
+      const { name, store_code, address } = req.body;
+      const store = new Store(name, store_code, address);
+      await sequelize.query(CREATE_NEW_STORE, {
         type: sequelize.QueryTypes.INSERT,
-        values: store,
+        replacements: [store.storeName, store.storeCode, store.address],
       });
-      res.status(200).json(data);
+      res.status(200).json("created");
     } catch (err) {
       res.status(500).json(err.toString());
     }
