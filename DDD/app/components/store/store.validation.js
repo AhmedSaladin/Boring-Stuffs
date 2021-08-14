@@ -1,6 +1,6 @@
 const Joi = require("joi");
 
-const storeSchema = Joi.object({
+module.exports = Joi.object({
   storeName: Joi.string()
     .alphanum()
     .min(3)
