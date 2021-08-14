@@ -1,7 +1,7 @@
 module.exports = class Store {
-  constructor(storeName, code, address) {
+  constructor(storeName, storeCode, address) {
     this.storeName = storeName;
-    this.storeCode = code;
+    this.storeCode = storeCode;
     this.address = address;
   }
 };
