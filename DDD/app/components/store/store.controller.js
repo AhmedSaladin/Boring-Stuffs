@@ -13,6 +13,6 @@ module.exports = {
     const { name, store_code, address } = req.body;
     const store = await Store(name, store_code, address);
     await storeDB.add_new_store(store);
-    res.status(200).json("created");
+    res.status(201).json("created");
   },
 };
