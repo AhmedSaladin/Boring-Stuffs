@@ -8,7 +8,7 @@ module.exports = class StoreDB {
   }
 
   async add_new_store(store) {
-    await sequelize.query(
+    return await sequelize.query(
       `INSERT INTO stores (name,st_code,address) values (?,?,?)`,
       {
         type: sequelize.QueryTypes.INSERT,
