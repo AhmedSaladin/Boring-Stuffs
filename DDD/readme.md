@@ -3,3 +3,10 @@ This folder is for study and applying Domain Driven Design with node.js
 
 ## Database design
 ![DBdesign](img/db_design.png)
+
+## Todo list
+- [X] Follow Domain Driven Design
+- [ ] Adding second database
+- [ ] Write some BDD tests
+- [ ] Write some TDD tests
+- [ ] Adding logging tool
