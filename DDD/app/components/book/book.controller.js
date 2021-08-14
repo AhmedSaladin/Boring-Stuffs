@@ -11,7 +11,7 @@ module.exports = {
   add_new_book: async (req, res) => {
     const { body } = req;
     const book = await Book(body);
-    await bookDB.add_new_book(book, "a12");
+    await bookDB.add_new_book(book, "123a");
     res.status(201).json("created");
   },
 };
