@@ -5,7 +5,6 @@ const wait = () => new Promise((resolve) => setTimeout(resolve, 2000));
 class FuncClass {
   constructor() {
     this.val = 5;
-    this.func = this.func.bind(this);
   }
   func() {
     return this.val;
@@ -15,8 +14,8 @@ class FuncClass {
 class ArrowClass {
   constructor() {
     this.val = 5;
-    this.arrow = () => this.val;
   }
+  arrow = () => this.val;
 }
 
 const outterCount = 20;
